@@ -25,7 +25,8 @@ const IncrementForm = () => {
         <div>
             <form 
                 onSubmit={(e) => {
-                    let { value } = input;
+                    e.preventDefault();
+                    incrementCountBy({ variables: { incrementBy: parseInt(input.value) } })
                     e.preventDefault();
                     incrementCountBy({ variables: { incrementBy: parseInt(value)  }})
                     value = '';
