@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { useQuery, useMutation } from 'react-query'
 
 import IncrementForm from './IncrementForm';
+import Counter from './Counter';
 
 const GET_COUNTER = gql`
     {
