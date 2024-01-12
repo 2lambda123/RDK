@@ -30,14 +30,14 @@ const Counter = () => {
         variables: counter
     });
     
-    if (error) return <h1>Error...</h1>
-    if (loading) return <h1>Loading...</h1>
+    {error && <div>Error...</div>}
+  {loading && <div>Loading...</div>;}
     const { count, incrementBy } = counter;
     return (
         <div>
             <h1>{count}</h1>
-            <button onClick={incrementCount}>Increment by {incrementBy}</button>                    
-            <Link to="/form">Form</Link>
+            <button onClick={() => incrementCount.mutate({variables: {count: count, incrementBy: incrementBy}})}>Increment by {incrementBy}</button>                    
+            <Link to="/form">Form</Link>, <Link to="/form">Increment Form</Link>
         </div>
      );
 }
