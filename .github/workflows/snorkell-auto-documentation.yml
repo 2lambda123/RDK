@@ -4,6 +4,9 @@ name: Snorkell.ai - Revolutionizing Documentation on GitHub
 
 on:
   push:
+    branches:
+      - main
+      - master
     branches: ["master"]
   workflow_dispatch:
 
