@@ -1,5 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Troubleshooting GitHub Actions Run Failure
+
+If the GitHub Actions run fails, follow the steps below to troubleshoot and fix the failure:
+1. Analyze Error Logs
+2. Identify the Cause of the Failure
+3. Steps to Fix Common Issues
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -34,6 +41,20 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
 Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+### Analyzing Error Logs and Identifying the Cause
+To analyze the error logs and identify the cause of the GitHub Actions run failure, follow the steps below:
+1. Access the GitHub Actions run logs and look for error messages and details.
+2. Look for specific error codes or descriptions that can help pinpoint the cause of the failure.
+3. Pay attention to the timing of the failure and any relevant changes made prior to the failure.
+
+### Steps to Fix Common Issues
+Once you have identified the cause of the failure, refer to the list of common issues and their corresponding solutions below:
+1. Issue: {Issue 1}
+   - Solution: {Solution 1}
+2. Issue: {Issue 2}
+   - Solution: {Solution 2}
+3. ...
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
