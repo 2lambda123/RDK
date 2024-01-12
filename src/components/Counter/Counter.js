@@ -1,7 +1,9 @@
 import React from 'react';
 import gql from 'graphql-tag';
 import { Link } from 'react-router-dom';
-import { useQuery, useMutation } from 'react-apollo-hooks';
+import { useQuery, useMutation } from 'react-query'
+
+import IncrementForm from './IncrementForm';
 
 const GET_COUNTER = gql`
     {
