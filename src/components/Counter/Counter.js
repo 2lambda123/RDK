@@ -21,11 +21,9 @@ const INCREMENT_COUNT = gql`
 `;  
 
 const Counter = () => {
-    const { data, loading, error } = useQuery(GET_COUNTER);
+    const { data, loading, error } = useQuery(GET_COUNTER, { onError: err => console.error('Error during useQuery:', err) });
     const { counter } = data;
-    const incrementCount = useMutation(INCREMENT_COUNT, { 
-        variables: counter
-    });
+    const incrementCount = useMutation(INCREMENT_COUNT, { variables: counter, onError: err => console.error('Error during useMutation:', err) });
     
     if (error) return <h1>Error...</h1>
     if (loading) return <h1>Loading...</h1>
