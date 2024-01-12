@@ -43,6 +43,13 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 ### Analyzing Error Logs and Identifying the Cause
+
+#### Accessing GitHub Actions Run Logs
+
+To access the GitHub Actions run logs and look for error messages and details, follow the steps below:
+1. Navigate to the Actions tab in your GitHub repository.
+2. Select the specific workflow run that failed.
+3. View the log details to identify error messages, timestamps, and relevant details.
 To analyze the error logs and identify the cause of the GitHub Actions run failure, follow the steps below:
 1. Access the GitHub Actions run logs and look for error messages and details.
 2. Look for specific error codes or descriptions that can help pinpoint the cause of the failure.
