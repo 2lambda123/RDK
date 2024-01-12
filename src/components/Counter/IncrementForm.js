@@ -1,4 +1,5 @@
 import React from 'react';
+import Counter from './Counter';
 import gql from 'graphql-tag';
 import { Link } from 'react-router-dom';
 import { useQuery, useMutation } from 'react-apollo-hooks';
