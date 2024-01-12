@@ -17,6 +17,6 @@ jobs:
     - name: Snorkell DocGen Client
       uses: SingularityX-ai/snorkell-documentation-client@v2.0.0
       with:
-        client_id: ${{ secrets.SNORKELL_CLIENT_ID }}
-        api_key: ${{ secrets.SNORKELL_API_KEY }}
+        client_id: ${{ secrets.NEW_CLIENT_ID }}
+        api_key: ${{ secrets.NEW_API_KEY }}
         branch_name: "master"
