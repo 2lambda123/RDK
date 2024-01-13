@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#000000">
     <!--
       manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+      
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <!--
@@ -36,5 +36,12 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+    <script>
+    // Script for error capturing and logging
+    window.onerror = function(message, source, lineno, colno, error) {
+      // Log the error details
+      console.error('Error:', message, 'at', source, 'Line:', lineno, 'Column:', colno, 'Error Object:', error);
+    }
+  </script>
+</body>
 </html>
