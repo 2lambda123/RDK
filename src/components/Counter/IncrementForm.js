@@ -1,4 +1,5 @@
 import React from 'react';
+import Counter from './Counter';
 import gql from 'graphql-tag';
 import { Link } from 'react-router-dom';
 import { useQuery, useMutation } from 'react-apollo-hooks';
@@ -24,13 +25,14 @@ const IncrementForm = () => {
         <div>
             <form 
                 onSubmit={(e) => {
-                    let { value } = input;
+                    e.preventDefault();
+                    incrementCountBy({ variables: { incrementBy: parseInt(input.value) } })
                     e.preventDefault();
                     incrementCountBy({ variables: { incrementBy: parseInt(value)  }})
                     value = '';
                 }}
             >
-                <input ref={node => { input = node }} placeholder={`Pick a number`}/>
+                <input name="number" ref={node => { input = node }} placeholder={`Pick a number`}/>
                 <button type="submit">Change the increment number</button>                                    
             </form> 
             <Link to="/counter">Counter</Link>
