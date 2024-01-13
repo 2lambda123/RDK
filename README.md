@@ -43,10 +43,21 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 ### Analyzing Error Logs and Identifying the Cause
+
+#### Accessing GitHub Actions Run Logs
+
+To access the GitHub Actions run logs and look for error messages and details, follow the steps below:
+1. Navigate to the Actions tab in your GitHub repository.
+2. Select the specific workflow run that failed.
+3. View the log details to identify error messages, timestamps, and relevant details.
 To analyze the error logs and identify the cause of the GitHub Actions run failure, follow the steps below:
-1. Access the GitHub Actions run logs and look for error messages and details.
+1. Access the GitHub Actions run logs and look for error messages, timestamps, and relevant details.
 2. Look for specific error codes or descriptions that can help pinpoint the cause of the failure.
 3. Pay attention to the timing of the failure and any relevant changes made prior to the failure.
+   - Solution: Perform the required configuration changes in the GitHub Actions workflow file to address the issue.
+2. Issue: {Issue 2}
+   - Solution: {Solution 2}
+3. ...
 
 ### Steps to Fix Common Issues
 Once you have identified the cause of the failure, refer to the list of common issues and their corresponding solutions below:
@@ -56,7 +67,22 @@ Once you have identified the cause of the failure, refer to the list of common i
    - Solution: {Solution 2}
 3. ...
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+ The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+### Template for Listing Common Issues and Solutions
+1. Issue: {Issue 1}
+   - Solution: {Solution 1}
+2. Issue: {Issue 2}
+   - Solution: {Solution 2}
+3. ...
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+ The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature.
 
 ## Learn More
 
